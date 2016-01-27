@@ -1,0 +1,1249 @@
+{% extends "blog/base.html" %}
+
+    <!-- 文章列表 与 侧边的东西 -->
+{%block main%}
+<div class="row">
+    <div id="vmaig-content" class="col-md-8 col-lg-9">
+        <!-- 警告框 -->
+        <div class="well alert hidden-xs fade in">
+            <button class="close" data-dismiss="alert" type="button">×</button>
+            欢迎来到
+            <a href="../static/index/Vmaig _ 分享极客生活.html" target="_blank">0x2d</a>
+            ,如果有任何问题可以加QQ：994171686。 也可加群 458788510 。
+        </div>
+
+        <div class="visible-xs">
+            <div class="search">
+                <form class="form-inline clearfix" role="form" method="get" action="http://vmaig.com/search/"> 
+                    <input type="text" class="form-control" id="top-s" name="s">
+                    <button class="btn btn-vmaig">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- 首页文章列表 -->
+        <div id="home-post-list">
+            <!--首页文章列表 -->
+            <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/django/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    django
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/vmaig_blog.html">本网站开源喽~~基于Django，Bootstrap</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-15
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                37
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                2345
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/django/" class=" ">
+                    <span class="label label-vmaig-1 btn">django</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/python/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">python</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        <img src="../static/index/default.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>更新日志 2015/5/15 从django1.6 升级到 django1.8 (git中还保留django1.6 分支) 概述 vmaig_blog 是一个基于 Django1.8 跟 Bootstrap3 开发的 博客系统 ，实现了一个博客完整的功能。 http://vmaig.com 就是基于vmaig_blog 搭建的。 实现功能 1. 文章,分类,专栏的添加，删除，修改。支持tin
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/vmaig_blog.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/linux/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    linux
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/linux_program_study_note_01.html">linux 环境编程学习笔记 第一天 linux 内存管理 </a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-07
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                8
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                622
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/linux/" class=" ">
+                    <span class="label label-vmaig-1 btn">linux</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/C/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">C</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/linux_program_study_note_01.html">
+                        <img src="../static/index/linux-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>linux 环境编程 一、linux 内存管理 1. 变量空间 linux 每运行一个程序都会在/proc内生成一个跟自己pid一样的文件夹，你面放着程序有关的信息 ldd ./1 可以看到 linux-vdso.so.1 (0x00007fff47eac000) libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f37c4414000) /lib64/ld-
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/linux_program_study_note_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/PE/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    PE
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/PE_study_01.html">PE文件结构（一） 基本结构</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-07
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                4
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                613
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/PE/" class=" ">
+                    <span class="label label-vmaig-1 btn">PE</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E9%80%86%E5%90%91/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">逆向</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E5%8F%8D%E6%B1%87%E7%BC%96/" class="hidden-xs ">
+                    <span class="label label-vmaig-3 btn">反汇编</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/PE_study_01.html">
+                        <img src="../static/index/default.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>参考 书：《加密与解密》 视频：小甲鱼 解密系列 视频 exe，dll都是PE（Portable Execute）文件结构。PE文件使用的是一个平面地址空间，所有代码和数据都被合并在一起，组成一个很大的结构。先看2张图，来大概了解一下PE文件结构。 PE文件的框架结构 通过这张图（开始在下面），我们可以知道PE文件的大概结构，PE文件是由 DOS头，PE文件头，块表，块，调试信息 这些部分组
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/PE_study_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/OllyDbg/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    OllyDbg
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/OllyDbg_use_study_01.html">OllyDbg 使用教程 （一）</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-06
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                1
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                1146
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/OllyDbg/" class=" ">
+                    <span class="label label-vmaig-1 btn">OllyDbg</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E9%80%86%E5%90%91/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">逆向</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E5%8F%8D%E6%B1%87%E7%BC%96/" class="hidden-xs ">
+                    <span class="label label-vmaig-3 btn">反汇编</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E6%B1%87%E7%BC%96/" class="hidden-xs ">
+                    <span class="label label-vmaig-4 btn">汇编</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/OllyDbg_use_study_01.html">
+                        <img src="../static/index/ollydbg-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>参考 书：《加密与解密》 视频：小甲鱼 解密系列 视频 、OllyDbg基本界面 图片1 如果按窗口切换按钮出现下面的情况，乱了，只需要双击一个窗口让它全屏就行了。 图片2 二、部分快捷键介绍 F3 ： 打开目标文件 F2 ： 设置断点 F7：单步步进，遇到CALL跟进 F8：单步步过，遇到CALL路过，不跟进 F9：运行调试程序，直到运行到断点处 F4：运行调试程序，直到运行到光标处 Ct
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/OllyDbg_use_study_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/%E6%B1%87%E7%BC%96/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    汇编
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/ASM_simple_study_01.html">汇编简单入门教程（一）基础知识、寄存器</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-05
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                1
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                916
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/ASM/" class=" ">
+                    <span class="label label-vmaig-1 btn">ASM</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/%E6%B1%87%E7%BC%96/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">汇编</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/ASM_simple_study_01.html">
+                        <img src="../static/index/asm-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>参考：《汇编语言》 王爽 第一，二章 一、基础知识 1. 用汇编语言编写程序的工作过程 汇编本质就是为了方便程序员，把二进制代码用汇编指令来表示 汇编指令----------------&gt; 编译器 ----------------&gt;机器码----------------&gt; 计算机执行 mov ax, bx 100010001 ................ .......
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/ASM_simple_study_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/django/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    django
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/django_simple_study_01.html">Django简单入门教程（一）安装，创建项目,配置</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-05
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                4
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                758
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/django/" class=" ">
+                    <span class="label label-vmaig-1 btn">django</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/python/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">python</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/django_simple_study_01.html">
+                        <img src="../static/index/django-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>参考： 书《The Django Book》 视频：csvt Django视频 1.创建项目 django‐admin.py startproject mysite。 2.运行开发服务器 python manage.py runserver 3.文件结构 mysite/ ├── manage.py └── mysite ├── __init__.py ├── settings.py ├── 
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/django_simple_study_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/python/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    python
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/python_simple_study_01.html">python 简单入门教程（一）运行，输入输出，数据类型</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-05
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                7
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                815
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/python/" class=" ">
+                    <span class="label label-vmaig-1 btn">python</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/python_simple_study_01.html">
+                        <img src="../static/index/python-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>python执行方式 交互模式 命令行下直接输入python进入python交换模式，输入命令即可 输入exit()可推出 文本模式 源代码 python xx.py 可直接运行 或者 给xx.py 可执行权限 直接 ./xx.py 即可自行 字节代码 python源文件经编译后生成 xx.pyc 编译方法： 执行 import py_compile py_compile.compile('
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/python_simple_study_01.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/linux/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    linux
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/linux_program_study_note_18.html">linux 环境编程学习笔记   第25天 信号量(进程同步)</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-07
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                0
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                526
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/linux/" class=" ">
+                    <span class="label label-vmaig-1 btn">linux</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/C/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">C</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/linux_program_study_note_18.html">
+                        <img src="../static/index/linux-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>一、信号量(进程同步) 模型 (1)创建或者得到信号量 semget int semget(key_t key, int nsems, //信号量数组的个数 int semflg); ////信号量的创建标记 创建：IPC_CREAT IPC_EXCL(防止重复创建)，打开：就是0 (2)初始化信号量中指定下标的值 semctl int semctl(int semid, int semnu
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/linux_program_study_note_18.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/linux/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    linux
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/linux_program_study_note_17.html">linux 环境编程学习笔记  第24天  基于socket文件的IPC</a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-07
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                0
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                322
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/linux/" class=" ">
+                    <span class="label label-vmaig-1 btn">linux</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/C/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">C</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/linux_program_study_note_17.html">
+                        <img src="../static/index/linux-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>一、基于socket文件的IPC 两种模型： 对等模型 C/S模型 1. 对等模型 绑定 (1) 建立socker内核对象 socket函数 int socket(int domain, 地址族类型 AF_UNIX AF_INET int type, //指定数据存放的数据格式 流SOCK_STREAM（数据之间没有边界） / 报文SOCK_DGRAM（数据之间有边界） int protoc
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/linux_program_study_note_17.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+                <div class="home-post well clearfix">
+    <div class="post-title underline clearfix">
+        <a href="http://vmaig.com/category/linux/">
+            <div class="pre-cat">
+                <div class="pre-catinner btn">
+                    linux
+                </div>
+                <div class="pre-catarrow">
+                </div>
+            </div>
+        </a>
+        <h1>
+            <a href="http://vmaig.com/article/linux_program_study_note_16.html">linux 环境编程学习笔记   第22、23天  基于内存的通信 </a>
+        </h1>
+        <div class="post-info">
+            <span>
+                <span class="glyphicon glyphicon-calendar"></span>
+                2015-05-07
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-comment"></span>
+                0
+            </span>
+            <span>
+                <span class="glyphicon glyphicon-eye-open"></span>
+                291
+            </span>
+            <div class="post-tags">
+                
+                <a href="http://vmaig.com/tag/linux/" class=" ">
+                    <span class="label label-vmaig-1 btn">linux</span>
+                </a>
+                
+                <a href="http://vmaig.com/tag/C/" class="hidden-xs ">
+                    <span class="label label-vmaig-2 btn">C</span>
+                </a>
+                
+                <a class="visible-xs-inline-block">
+                    <span class="label label-vmaig-2 btn ">...</span>
+                </a>
+ 
+            </div>
+
+        </div>
+    </div>
+    <div class="post-content">
+        <div class="row">
+            <div class="col-sm-4">
+                <figure class="thumbnail">
+                    <a href="http://vmaig.com/article/linux_program_study_note_16.html">
+                        <img src="../static/index/linux-article.jpg" height="300" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                
+                </p><p>一、基于内存的通信 一组内核共享工具 ipcs 可以看到三段东西 Shared Memory Segments 共享内存 Semaphore Arrays 信号量数组，共享内存数组 Message Queues 共享消息队列 ipcrm 1.普通的父子进程之间的匿名内存共享映射 2.内核共享内存（无序） 编程模型： (1) 创建共享内存，得到一个ID shmget函数 int shmget(
+                
+                
+                    ...
+                
+                </p>
+                <a type="button" class="btn btn-vmaig pull-right hidden-xs" href="http://vmaig.com/article/linux_program_study_note_16.html">阅读全文</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            
+            
+
+            <!--分页 -->
+            
+            <ul class="pager">
+    
+        <li class="previous disabled">
+            <a>← 上一页</a>
+        </li>
+    
+
+    <li class="page-number">1/7</li>
+
+    
+        <li class="next">
+            <a href="http://vmaig.com/?page=2">下一页 →</a>
+        </li>
+    
+</ul>
+
+            
+        </div>
+    </div>
+
+    <!-- 右边的widgets -->
+    <div id="vmaig-side" class="col-md-4 col-lg-3 hidden-xs">
+
+<style>
+#tags_cloud {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+</style>
+
+<script src="../static/index/d3.js"></script>
+<script src="../static/index/d3.layout.cloud.js"></script>
+<script>
+    var fill = d3.scale.category20();
+
+    //在tags数组中存放blog的tags,用于在标签云中显示
+    var tags = [ "反汇编","OllyDbg","PE","ASM","Django","Python","Java","Bootstrap","Gentoo","linux","Shell","加密与解密","逆向","爬虫",];
+
+    var words = tags.concat(tags).concat(tags);
+      
+    d3.layout.cloud().size([250, 250])
+        .words(words.map(function(d) {
+            return {text: d, size: 10 + Math.random() * 25};
+        }))
+        .padding(5)
+        .rotate(function() { return ~~(Math.random() * 2) * 90; })
+        .font("Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol'")
+        .fontSize(function(d) { return d.size; })
+        .on("end", draw)
+        .start();
+
+    function draw(words) {
+        d3.select("#tags_cloud").append("svg")
+          .attr("width", 250)
+          .attr("height", 250)
+          .append("g")
+          .attr("transform", "translate(125,125)");
+
+        for (var i=0; i< words.length;++i)
+        {
+            var str = words[i];
+            d3.select("g").append("a").attr("xlink:href","/tag/"+words[i].text)
+                .append("text").text(words[i].text) .style("font-size", words[i].size+"px")
+                .style("font-family", "'Microsoft YaHei','WenQuanYi Micro Hei','tohoma,sans-serif'")
+                .style("fill", fill(i))
+                .attr("text-anchor", "middle")
+                .attr("transform", 
+                    "translate(" + [words[i].x, words[i].y] + ")rotate(" + words[i].rotate + ")"
+          )
+        }
+    }
+</script>
+
+
+
+
+
+        <div id="vmaig-search">
+    <div class="search">
+        <form class="form-inline clearfix" role="form" method="get" action="http://vmaig.com/search/"> 
+            <input type="text" class="form-control" id="s" name="s">
+            <button class="btn btn-vmaig">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
+    </div>
+</div>
+
+        <div id="vmaig-hotest-posts">
+    <div class="panel panel-vmaig">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="glyphicon glyphicon-flag"></span>
+                热门文章
+                <span class="glyphicon glyphicon-remove btn panel-close pull-right"></span>
+                <span class="glyphicon glyphicon-chevron-up btn panel-collapse pull-right" data-toggle="collapse" data-target="#hotest-post-list"></span>
+            </h3>
+        </div>
+        <ul id="hotest-post-list" class="list-group collapse in">
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/vmaig_blog.html">本网站开源喽~~基于Django，Bootstrap</a> </span>
+                <span class="badge">2345</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/OllyDbg_use_study_01.html">OllyDbg 使用教程 （一）</a> </span>
+                <span class="badge">1146</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/ASM_simple_study_01.html">汇编简单入门教程（一）基础知识、寄存器</a> </span>
+                <span class="badge">916</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/python_simple_study_01.html">python 简单入门教程（一）运行，输入输出，数据类型</a> </span>
+                <span class="badge">815</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/django_simple_study_01.html">Django简单入门教程（一）安装，创建项目,配置</a> </span>
+                <span class="badge">758</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/django_simple_study_05.html">Django简单入门教程（五）表单</a> </span>
+                <span class="badge">639</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/linux_program_study_note_01.html">linux 环境编程学习笔记 第一天 linux 内存管理 </a> </span>
+                <span class="badge">622</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/PE_study_01.html">PE文件结构（一） 基本结构</a> </span>
+                <span class="badge">613</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/django_simple_study_02.html">Django简单入门教程（二）模板</a> </span>
+                <span class="badge">539</span>
+                </li>
+            
+                <li class="list-group-item">
+                <span class="hotest-post-title"><a href="http://vmaig.com/article/linux_program_study_note_18.html">linux 环境编程学习笔记   第25天 信号量(进程同步)</a> </span>
+                <span class="badge">526</span>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+        <div id="vmaig-latest-comments">
+    <div class="panel panel-vmaig-comments">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="glyphicon glyphicon-comment"></span>
+                最新评论
+                <span class="glyphicon glyphicon-remove btn panel-close pull-right" data-dismiss="alert"></span>
+                <span class="glyphicon glyphicon-chevron-up btn panel-collapse pull-right" data-toggle="collapse" data-target="#latest-comment-list"></span>
+            </h3>
+        </div>
+        <ul id="latest-comment-list" class="list-group collapse in">
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">ch_tao 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/python_simple_study_01.html">
+                        
+                        fffffffffffff
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">lxtalx 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        啊吧才的额飞个好就看啊吧才的额飞个好就看啊吧才的额飞个好就看
+                        
+                        
+                        ...
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">lxtalx 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        emem
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">ganxie_blog 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/linux_program_study_note_01.html">
+                        
+                        测试，感谢开源
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/tx_100x100_3.jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">test 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        &lt;img src=/ onerror=alert(7);&gt;
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">yxlwfds 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        没有用户中心
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">yxlwfds 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        咋回事
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">mjy 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/OllyDbg_use_study_01.html">
+                        
+                        111
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">mjy 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        jjj
+                        
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+            <li class="list-group-item clearfix">
+            <div class="comment-tx">
+                
+                <img src="../static/index/default(1).jpg" width="40" height="40" alt="">
+                
+            </div>
+            <div class="comment-info">
+                <div class="comment-username">
+                    <a href="http://vmaig.com/#">yhatcd 评论:</a>
+                </div>
+                <div class="comment-content">
+                    <a href="http://vmaig.com/article/vmaig_blog.html">
+                        
+                        感谢楼主的开源。
+有个小小建议：1、导航菜单也像分类那样可以
+                        
+                        
+                        ...
+                        
+                    </a>
+                </div>
+            </div>
+            </li>
+            
+        </ul>
+    </div>     
+</div>
+
+        <div id="vmaig-links-posts">
+    <div class="panel panel-vmaig">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span class="glyphicon glyphicon-link"></span>
+                友情链接
+                <span class="glyphicon glyphicon-remove btn panel-close pull-right"></span>
+                <span class="glyphicon glyphicon-chevron-up btn panel-collapse pull-right" data-toggle="collapse" data-target="#links"></span>
+            </h3>
+        </div>
+        <div id="links" class="padding10 list-group collapse in">
+	    <a title="玩蛇网Python论坛" target="_blank" href="http://bbs.iplaypython.com/" class="btn btn-vmaig btn-xs margin2">玩蛇网Python论坛</a>
+            <a title="简明现代魔法" target="_blank" href="http://www.nowamagic.net/" class="btn btn-success btn-xs margin2">简明现代魔法</a>
+            <a title="the5fire" target="_blank" href="http://www.the5fire.com/" class="btn btn-info btn-xs margin2">the5fire</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+{% endblock %}
+
+<script language="javascript" type="text/javascript">
+    $('#login-form').submit(function(){
+        $.ajax({
+            type:"POST",
+            url:"/usercontrol/login",
+            data:{"username":$("#login-username").val(),"password":$("#login-password").val()},
+            beforeSend:function(xhr){
+                xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+            },
+            success:function(data,textStatus){
+                var errors = data["errors"];
+                if(errors.length==0){
+                    location.reload();
+                }
+                else{
+                    //alert(errors);
+                    var html = "<div class=\"alert alert-danger\">"
+                    for (var key in errors){
+                        html += errors[key]+"<br/>";
+                    }
+                    html += "</div>";
+                    $("#login-modal .modal-header").after(html);
+                }
+            },
+            error:function(XMLHttpRequest, textStatus, errorThrown){
+                alert(XMLHttpRequest.responseText);
+            }
+
+        });
+        return false;
+    });
+
+    $("#login-button").click(function(){
+        $("#login-modal .alert").remove();
+    });
+
+
+    $('#register-form').submit(function(){
+        $.ajax({
+            type:"POST",
+            url:"/usercontrol/register",
+            data:{"username":$("#register-username").val(),"email":$("#register-email").val(),
+                  "password1":$("#register-password-1").val(),"password2":$("#register-password-2").val(),},
+            dataType:'json',
+            beforeSend:function(xhr){
+                xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+            },
+            success:function(data,textStatus){
+                var errors = data["errors"];
+                if(errors.length==0){
+                    location.reload();
+                }
+                else{
+                    //alert(errors);
+                    var html = "<div class=\"alert alert-danger\">"
+                    for (var key in errors){
+                        html += errors[key]+"<br/>";
+                    }
+                    html += "</div>";
+                    $("#register-modal .modal-header").after(html);
+                }
+
+            },
+            error:function(XMLHttpRequest, textStatus, errorThrown){
+                alert(XMLHttpRequest.responseText);
+            }
+        });
+        return false;
+    });
+
+    $("#register-button").click(function(){
+        $("#register-modal .alert").remove();
+    });
+
+    $("#logout").click(function(){
+        $.ajax({
+            type:"POST",
+            url:"/usercontrol/logout",
+            beforeSend:function(xhr){
+                xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+            },
+            success:function(data,textStatus){
+                location.replace("/");
+            },
+            error:function(XMLHttpRequest, textStatus, errorThrown){
+                alert(XMLHttpRequest.responseText);
+            }
+        });
+        return false;
+    });
+</script>

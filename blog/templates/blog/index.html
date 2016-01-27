@@ -1,0 +1,79 @@
+{% extends "blog/base.html" %}
+
+    <!-- 文章列表 与 侧边的东西 -->
+{%block main%}
+<div class="row">
+    <div id="x2d-content" class="col-md-8 col-lg-9">
+        <!-- 警告框 -->
+{#        <div class="well alert hidden-xs fade in">#}
+{#            <button class="close" data-dismiss="alert" type="button">×</button>#}
+{#            欢迎来到#}
+{#            <a href="../static/index/0x2d _ 分享极客生活.html" target="_blank">0x2d</a>#}
+{#            ,如果有任何问题可以加QQ：994171686。 也可加群 458788510 。#}
+{#        </div>#}
+
+        <div class="visible-xs">
+            <div class="search">
+                <form class="form-inline clearfix" role="form" method="get" action="http://0x2d.top/search/">
+                    <input type="text" class="form-control" id="top-s" name="s">
+                    <button class="btn btn-x2d">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- 首页文章列表 -->
+        <div id="home-post-list">
+            <!--首页文章列表 -->
+
+            {% if article_list %}
+            {% with post_list=article_list %}
+            {% for post in post_list %}
+                {% include "./blog/home_post.html" %}
+            {% endfor %}
+            {% endwith %}
+            {% endif %}
+
+
+
+            {% if page_obj%}
+            {% include "./blog/pagination.html"%}
+            {% endif %}
+
+            
+        </div>
+    </div>
+
+    <!-- 右边的widgets -->
+    <div id="x2d-side" class="col-md-4 col-lg-3 hidden-xs">
+
+{#        {% include "./blog/search.html"%}#}
+
+        {% include "./blog/hotest_posts.html"%}
+
+    </div>
+</div>
+{% endblock %}
+
+{% block js%}
+    <script type="text/javascript">
+        SyntaxHighlighter.autoloader(
+            'java            /static/syntax/shBrushJava.js',
+            'bash shell      /static/syntax/shBrushBash.js',
+            'sql             /static/syntax/shBrushSql.js',
+            'xml html        /static/syntax/shBrushXml.js',
+            'python          /static/syntax/shBrushPython.js',
+            'js              /static/syntax/shBrushJScript.js',
+            'css             /static/syntax/shBrushCss.js'
+        );
+        SyntaxHighlighter.all();
+    </script>
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shCore.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushCpp.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushJava.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushPython.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushXml.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushPowerShell.js"></script>#}
+{#<script type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushJScript.js"></script>#}
+{#<script type="text/javascript">SyntaxHighlighter.all();</script>#}
+{% endblock%}
