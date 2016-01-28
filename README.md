@@ -1,3 +1,3 @@
-Ox2d blog
-test
-123
+0x2d blog
+django1.5
+bootstrap3
