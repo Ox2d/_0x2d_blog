@@ -35,7 +35,7 @@ class BaseMixin(object):
 class IndexView(BaseMixin,ListView):
     template_name = 'blog/index.html'
     context_object_name = 'article_list'
-    paginate_by = 5 #分页--每页的数目
+    paginate_by = PAGE_NUM #分页--每页的数目
 
     def get_context_data(self,**kwargs):
         #轮播
