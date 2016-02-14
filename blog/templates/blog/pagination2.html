@@ -1,6 +1,6 @@
+{% if  paginator.num_pages > 1 %}
 <div style="text-align: center;"><ul id="paginator" class="pager"></ul></div>
 <script type='text/javascript'>
-
 var options = {
     bootstrapMajorVersion:3,
     currentPage:{{page_obj.number}},
@@ -12,9 +12,9 @@ var options = {
             case "first":
                 return "首页";
             case "prev":
-                return "上一页";
+                return "<<";
             case "next":
-                return "下一页";
+                return ">>";
             case "last":
                 return "尾页";
             case "page":
@@ -27,3 +27,4 @@ var options = {
 }
 $('#paginator').bootstrapPaginator(options);
 </script>
+{% endif %}
