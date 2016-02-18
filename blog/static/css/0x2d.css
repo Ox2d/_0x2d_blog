@@ -667,3 +667,6 @@ footer {
 .pager {
     margin: 0;
 }
+.syntaxhighlighter .toolbar {
+  display: none;
+}
