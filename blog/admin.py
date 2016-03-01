@@ -14,11 +14,11 @@ class ArticleAdmin(admin.ModelAdmin):
     list_filter = ('category','create_time',)
     list_display = ('title','category','update_time','create_time',)
     fieldsets = (
-        (u'内容', {
-            'fields': ('content',)
-            }),
         (u'基本信息', {
             'fields': ('title','category','tags')
+            }),
+        (u'内容', {
+            'fields': ('content',)
             }),
     )
 

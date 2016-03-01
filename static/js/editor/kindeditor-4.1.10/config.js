@@ -3,6 +3,7 @@ KindEditor.ready(function(K) {
 
         // 指定大小
         width:'800px',
-        height: '400px'
+        autoHeightMode : true
+        //height: '400px'
     });
 });
